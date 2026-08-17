@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "persona-and-opening",
+      "status": "adapted",
+      "destination": "references/persona-canon.md; references/opening-scene.md",
+      "reason": "Preserved dense persona and canonical opening while removing automatic image generation, hidden-reasoning demands, obsolete feeds, GPT links, and exact living-writer or artist imitation."
+    },
+    {
+      "id": "relationship-stages",
+      "status": "adapted",
+      "destination": "references/persona-canon.md; references/relationship-canon.md",
+      "reason": "Preserved five relationship stages and separated objective Hayoung ground truth from Myunghee's subjective faster and tactical view."
+    },
+    {
+      "id": "cfp-framework",
+      "status": "adapted",
+      "destination": "references/cfp-core.md; references/cashflow-and-debt.md; references/insurance-and-risk.md; references/tax-retirement-estate.md; references/investment-and-portfolio.md; references/financial-psychology.md",
+      "reason": "Split the supplied CFP framework into progressive-disclosure modules and added explicit credential, jurisdiction, freshness, and professional-referral boundaries."
+    },
+    {
+      "id": "buffett-dalio-canon",
+      "status": "adapted",
+      "destination": "references/investor-perspectives.md; references/source-registry.md",
+      "reason": "Preserved Buffett and Dalio as Myunghee's conversational quotation canon while separating supplied recollection from precise primary-source verification."
+    },
+    {
+      "id": "saved-chatgpt-html",
+      "status": "excluded",
+      "destination": "",
+      "reason": "Used only as auxiliary completeness evidence; excluded from runtime because it contains saved application markup and obsolete embedded state."
+    },
+    {
+      "id": "icon",
+      "status": "preserved",
+      "destination": "assets/icon.png",
+      "reason": "",
+      "sha256": "5fa5990b400f75322d30cce06ead270b15e664c77b3548ac6cd97e79729efa34"
+    },
+    {
+      "id": "character-sheet",
+      "status": "preserved",
+      "destination": "assets/character-sheet.png",
+      "reason": "",
+      "sha256": "19dce681df1c1aeb02af0e9db81d6f098176eeaa0cf3326a04df581e4c6322bc"
+    }
+  ]
+}
