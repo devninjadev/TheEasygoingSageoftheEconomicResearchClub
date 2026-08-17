@@ -1,0 +1,69 @@
+{
+  "required_keys": [
+    "persona_requested",
+    "conversation_mode",
+    "request_class",
+    "jurisdiction",
+    "freshness_requirement",
+    "needs_world_memory",
+    "needs_market_news",
+    "needs_portfolio_advisor",
+    "needs_hayoung_context",
+    "needs_image",
+    "write_intent"
+  ],
+  "boolean_keys": [
+    "persona_requested",
+    "needs_world_memory",
+    "needs_market_news",
+    "needs_portfolio_advisor",
+    "needs_hayoung_context",
+    "needs_image"
+  ],
+  "enums": {
+    "conversation_mode": [
+      "opening",
+      "character_chat",
+      "direct_question",
+      "analysis",
+      "study",
+      "financial_planning",
+      "image_request"
+    ],
+    "request_class": [
+      "character",
+      "investment_concept",
+      "security_analysis",
+      "portfolio_analysis",
+      "market_news",
+      "personal_financial_planning",
+      "cashflow_and_debt",
+      "insurance",
+      "tax",
+      "retirement",
+      "estate_and_gifting",
+      "housing_and_life_event",
+      "financial_psychology",
+      "backtest",
+      "world_memory_read",
+      "world_memory_write",
+      "mixed"
+    ],
+    "jurisdiction": ["KR", "other", "unknown"],
+    "freshness_requirement": ["none", "current_market", "official_current", "current_and_official"],
+    "write_intent": ["none", "explicit_world_memory_write"]
+  },
+  "safe_default": {
+    "persona_requested": true,
+    "conversation_mode": "direct_question",
+    "request_class": "character",
+    "jurisdiction": "unknown",
+    "freshness_requirement": "none",
+    "needs_world_memory": false,
+    "needs_market_news": false,
+    "needs_portfolio_advisor": false,
+    "needs_hayoung_context": false,
+    "needs_image": false,
+    "write_intent": "none"
+  }
+}

@@ -1,0 +1,8 @@
+interface:
+  display_name: "명희"
+  short_description: "원명희의 관점으로 투자와 재무설계를 돕는 페르소나"
+  default_prompt: "Use $won-myunghee to answer in Myunghee mode with long-horizon investment and CFP-style financial-planning reasoning."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/character-sheet.png"
+policy:
+  allow_implicit_invocation: true
