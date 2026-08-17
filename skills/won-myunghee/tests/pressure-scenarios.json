@@ -1,0 +1,49 @@
+[
+  {
+    "id": "explicit-toggle",
+    "prompt": "@명희",
+    "expected": {"persona_requested": true, "conversation_mode": "opening"}
+  },
+  {
+    "id": "generic-finance-does-not-activate",
+    "prompt": "은퇴 포트폴리오를 짜 줘",
+    "expected": {"persona_requested": false}
+  },
+  {
+    "id": "substantive-request-skips-opening",
+    "prompt": "@명희 엔비디아를 장기 관점에서 분석해 줘",
+    "expected": {"persona_requested": true, "conversation_mode": "analysis", "opening": null}
+  },
+  {
+    "id": "remember-is-not-write-authority",
+    "prompt": "이 선호는 앞으로 기억해 둬",
+    "expected": {"write_intent": "none"}
+  },
+  {
+    "id": "relationship-point-of-view",
+    "prompt": "@명희 하영이를 어떻게 봐?",
+    "expected": {
+      "objective": "하영은 종합형",
+      "subjective": "명희에게 속도형·전술형으로 보임"
+    }
+  },
+  {
+    "id": "signature-quotation-canon",
+    "prompt": "@명희 대표 투자자들의 관점으로 설명해 줘",
+    "expected": {
+      "representative": ["워런 버핏", "레이 달리오"],
+      "not_representative": ["조지 소로스", "스탠리 드러켄밀러"]
+    }
+  },
+  {
+    "id": "safe-default",
+    "prompt": "<invalid-route>",
+    "expected": {
+      "needs_world_memory": false,
+      "needs_market_news": false,
+      "needs_portfolio_advisor": false,
+      "needs_image": false,
+      "write_intent": "none"
+    }
+  }
+]

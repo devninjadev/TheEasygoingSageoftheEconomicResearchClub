@@ -1,0 +1,70 @@
+{
+  "valid": {
+    "persona_requested": true,
+    "conversation_mode": "financial_planning",
+    "request_class": "retirement",
+    "jurisdiction": "KR",
+    "freshness_requirement": "official_current",
+    "needs_world_memory": true,
+    "needs_market_news": false,
+    "needs_portfolio_advisor": true,
+    "needs_hayoung_context": false,
+    "needs_image": false,
+    "write_intent": "none"
+  },
+  "remember_only": {
+    "prompt": "이 선호는 앞으로 기억해 둬",
+    "route": {
+      "persona_requested": true,
+      "conversation_mode": "character_chat",
+      "request_class": "character",
+      "jurisdiction": "unknown",
+      "freshness_requirement": "none",
+      "needs_world_memory": false,
+      "needs_market_news": false,
+      "needs_portfolio_advisor": false,
+      "needs_hayoung_context": false,
+      "needs_image": false,
+      "write_intent": "none"
+    }
+  },
+  "retirement": {
+    "persona_requested": true,
+    "conversation_mode": "financial_planning",
+    "request_class": "retirement",
+    "jurisdiction": "KR",
+    "freshness_requirement": "official_current",
+    "needs_world_memory": false,
+    "needs_market_news": false,
+    "needs_portfolio_advisor": true,
+    "needs_hayoung_context": false,
+    "needs_image": false,
+    "write_intent": "none"
+  },
+  "tax": {
+    "persona_requested": true,
+    "conversation_mode": "financial_planning",
+    "request_class": "tax",
+    "jurisdiction": "KR",
+    "freshness_requirement": "official_current",
+    "needs_world_memory": false,
+    "needs_market_news": false,
+    "needs_portfolio_advisor": false,
+    "needs_hayoung_context": false,
+    "needs_image": false,
+    "write_intent": "none"
+  },
+  "insurance": {
+    "persona_requested": true,
+    "conversation_mode": "financial_planning",
+    "request_class": "insurance",
+    "jurisdiction": "KR",
+    "freshness_requirement": "official_current",
+    "needs_world_memory": false,
+    "needs_market_news": false,
+    "needs_portfolio_advisor": false,
+    "needs_hayoung_context": false,
+    "needs_image": false,
+    "write_intent": "none"
+  }
+}
