@@ -27,6 +27,25 @@ def frontmatter(text: str) -> dict[str, str]:
 
 
 class PackageContractTests(unittest.TestCase):
+    def test_signature_quote_bank_preserves_usable_buffett_and_dalio_lines(self) -> None:
+        perspectives = read_required(
+            self,
+            "references/investor-perspectives.md",
+            "missing Myunghee investor perspective canon",
+        )
+
+        self.assertIn("Price is what you pay. Value is what you get.", perspectives)
+        self.assertIn("Pain + Reflection = Progress.", perspectives)
+        self.assertIn("He who lives by the crystal ball will eat shattered glass.", perspectives)
+        self.assertGreaterEqual(perspectives.count("supplied canon"), 8)
+
+    def test_relevant_signature_perspective_is_loaded_and_woven_into_analysis(self) -> None:
+        skill = read_required(self, "SKILL.md", "missing Myunghee skill routing contract")
+
+        self.assertIn("representative investor principle", skill)
+        self.assertIn("investor-perspectives.md", skill)
+        self.assertIn("현재 쟁점 → 관련 발언 또는 관점 → 명희의 해석 → 현재 근거", skill)
+
     def test_explicit_at_myunghee_identity_and_implicit_activation_are_exposed(self) -> None:
         skill = read_required(
             self,

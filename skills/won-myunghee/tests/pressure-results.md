@@ -16,3 +16,8 @@ The closed validator rejects missing and extra keys, wrong types, and unknown en
 
 Deterministic tests prove package contracts, routing behavior, source separation, and asset migration. They do not prove that ChatGPT Work has refreshed its skill picker, that `@명희` is visible with the intended icon, that connectors are authenticated, or that a future model response follows every prose nuance. Those remain live acceptance checks after installation.
 
+## 2026-08-19 quotation behavior repair
+
+A read-only independent evaluator reproduced the runtime gap: the pre-repair Myunghee answer read the compressed `investor-perspectives.md` but used no Buffett or Dalio statement because the file contained only high-level summaries. The repair restored a compact topic-indexed supplied-canon bank and made the reference load when a substantive question materially touches a representative principle, even if the user does not name the investor.
+
+On the same post-repair prompt about a good company at an expensive price, the evaluator used one Buffett price-versus-value perspective inside Myunghee's reasoning, then returned to valuation inputs and decision conditions. It did not quote-stack, present Buffett as evidence, or mix in Hayoung's Soros/Druckenmiller canon. This forward sample complements, but does not replace, live ChatGPT Work acceptance.
