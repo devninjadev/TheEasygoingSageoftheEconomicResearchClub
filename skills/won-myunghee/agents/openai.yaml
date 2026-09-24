@@ -5,4 +5,5 @@ interface:
   icon_small: "./assets/icon.png"
   icon_large: "./assets/character-sheet.png"
 policy:
+  products: [CHAT, CODEX]
   allow_implicit_invocation: true

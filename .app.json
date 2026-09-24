@@ -1,0 +1,24 @@
+{
+  "apps": {
+    "alpaca": {
+      "id": "connector_691f721a77bc8191be115b65c85075c0",
+      "required": true
+    },
+    "app-69fe0bf66c8481919c513d799406436e": {
+      "id": "asdk_app_69fe0bf66c8481919c513d799406436e",
+      "required": true
+    },
+    "binance": {
+      "id": "asdk_app_6965faefe2b081919a998e14aa25f738",
+      "required": true
+    },
+    "app-69ea4ed2cf7c8191b742ef3622479ddd": {
+      "id": "asdk_app_69ea4ed2cf7c8191b742ef3622479ddd",
+      "required": true
+    },
+    "notion": {
+      "id": "asdk_app_69c18c28f1188191bf5b8445c4ab0a2e",
+      "required": true
+    }
+  }
+}

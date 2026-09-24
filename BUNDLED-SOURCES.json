@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "world_memory": {
+    "repository": "https://github.com/devninjadev/WorldMemoryLite",
+    "commit": "03c0d9f2257c1c00c7cfa48e423d47a58c708b25",
+    "version": "0.17.0",
+    "changes": "agents/openai.yaml products normalized to CHAT/CODEX for hosted discovery; runtime and references unchanged"
+  },
+  "portfolio_advisor": {
+    "repository": "https://github.com/devninjadev/PortfolioAnalysisSkillChatGPT",
+    "commit": "ec15a97491e2e096399b1e26be1fdd605e210dd1",
+    "changes": "ChatGPT capability gate in SKILL.md and default prompt; evidence contracts unchanged; agent products normalized to CHAT/CODEX; unsupported interface capability_notes removed"
+  },
+  "market_news_radar": {
+    "source": "user-selected installed skill",
+    "changes": "agents/openai.yaml products normalized to CHAT/CODEX"
+  },
+  "verification": {
+    "market_news_tests": 36,
+    "portfolio_tests": 171,
+    "world_memory_upstream_suite": {
+      "run_count": 286,
+      "failure_reports": 13,
+      "import_errors": 3,
+      "status": "not_all_passing",
+      "note": "Unmodified upstream 0.17.0 tests retain RSS and old VIX expectations, and import removed collection_pages. No claim of full suite success."
+    },
+    "myunghee_tests": 22,
+    "shared_skill_tests_note": "Shared skill results were obtained during Hayoung packaging; shared files are byte-identical."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gpt-8aca8305c2694af3f8836e8b43ec7cec",
+  "version": "2.0.0",
+  "description": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
+  "author": {
+    "name": "devninjadev"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "퍼스트 메시지를 출력해줘."
+        ],
+        "developerName": "devninjadev",
+        "displayName": "경제연구부의 느긋한 현자: 60년 전통 부실에서 배우는 가치투자의 마법",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
+        "shortDescription": "라이트노벨 스타일의 경제 투자 에듀테인먼트"
+      },
+      "apps": "./.app.json"
+    }
+  }
+}

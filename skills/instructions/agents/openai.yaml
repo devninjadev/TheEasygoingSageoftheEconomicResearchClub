@@ -1,0 +1,7 @@
+interface:
+  display_name: "명희 (호환 진입점)"
+  short_description: "기존 플러그인 호출을 원명희 스킬로 연결합니다"
+  default_prompt: "Use $won-myunghee as the canonical persona for this plugin."
+policy:
+  products: [CHAT, CODEX]
+  allow_implicit_invocation: true
