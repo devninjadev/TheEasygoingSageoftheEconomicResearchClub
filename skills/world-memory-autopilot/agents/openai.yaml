@@ -7,7 +7,5 @@ interface:
     for SQL-free same-window Report reuse, partial-source continuation, and six-hour
     Story integration.
 policy:
-  products:
-  - CHAT
-  - CODEX
+  products: [CHAT, CODEX]
   allow_implicit_invocation: true

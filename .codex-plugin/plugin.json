@@ -20,6 +20,6 @@
   },
   "name": "gpt-8aca8305c2694af3f8836e8b43ec7cec",
   "skills": "./skills/",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "apps": "./.app.json"
 }

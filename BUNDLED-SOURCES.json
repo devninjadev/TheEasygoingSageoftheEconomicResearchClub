@@ -1,14 +1,14 @@
 {
-  "version": "2.0.1",
+  "version": "2.0.2",
   "world_memory": {
     "repository": "https://github.com/devninjadev/WorldMemoryLite",
-    "commit": "03c0d9f2257c1c00c7cfa48e423d47a58c708b25",
-    "version": "0.17.0",
+    "commit": "d6c8d4dafc9785bd409828b6fcfd0c06431447c8",
+    "version": "0.17.1",
     "changes": "agents/openai.yaml products normalized to CHAT/CODEX for hosted discovery; runtime and references unchanged"
   },
   "portfolio_advisor": {
     "repository": "https://github.com/devninjadev/PortfolioAnalysisSkillChatGPT",
-    "commit": "ec15a97491e2e096399b1e26be1fdd605e210dd1",
+    "commit": "7a0b85e7879ee7a278527c6877e273a6b96470c3",
     "changes": "ChatGPT capability gate in SKILL.md and default prompt; evidence contracts unchanged; agent products normalized to CHAT/CODEX; unsupported interface capability_notes removed"
   },
   "market_news_radar": {
@@ -17,7 +17,7 @@
   },
   "verification": {
     "market_news_tests": 36,
-    "portfolio_tests": 171,
+    "portfolio_tests": 175,
     "world_memory_upstream_suite": {
       "run_count": 286,
       "failure_reports": 13,
@@ -26,12 +26,30 @@
       "note": "Unmodified upstream 0.17.0 tests retain RSS and old VIX expectations, and import removed collection_pages. No claim of full suite success."
     },
     "myunghee_tests": 22,
-    "shared_skill_tests_note": "Shared skill results were obtained during Hayoung packaging; shared files are byte-identical."
+    "shared_skill_tests_note": "Shared skill results were obtained during Hayoung packaging; shared files are byte-identical.",
+    "world_memory_packaging_tests": 10
   },
   "alpaca_paper_trading_fallback": {
     "app_id": "asdk_app_6a3cdf9e34b881918505f1cd5e06dbd8",
     "scope": "read-only market data",
     "smoke_test": "2026-09-26: get_clock + SPY IEX snapshot succeeded",
-    "limitation": "Paper history schema is not automatically compatible with legacy portfolio validator"
+    "limitation": "Daily single-symbol Paper history supported with explicit call records; nonempty corporate actions and incomplete pages fail closed"
+  },
+  "upstream_skill_releases": {
+    "evidence-first-portfolio-advisor": {
+      "version": "0.9.4",
+      "repository": "https://github.com/devninjadev/PortfolioAnalysisSkillChatGPT",
+      "commit": "7a0b85e7879ee7a278527c6877e273a6b96470c3"
+    },
+    "market-news-radar": {
+      "version": "0.1.1",
+      "repository": "https://github.com/devninjadev/market-news-radar",
+      "commit": "59c7ed2690352bf6ba8844dcbf26e0a365837d8f"
+    },
+    "world-memory-autopilot": {
+      "version": "0.17.1",
+      "repository": "https://github.com/devninjadev/WorldMemoryLite",
+      "commit": "d6c8d4dafc9785bd409828b6fcfd0c06431447c8"
+    }
   }
 }

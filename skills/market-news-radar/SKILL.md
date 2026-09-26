@@ -3,7 +3,7 @@ name: market-news-radar
 description: Use when users ask about current financial news, trending market events, market breadth, ETF risk signals, volatility conditions, or why U.S. equities are moving now.
 ---
 
-For every Alpaca-dependent step, first read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Prefer original Alpaca; use Alpaca Paper Trading read-only market data when the needed original capability is unavailable or fails, preserving all evidence gates.
+Before any Alpaca-dependent step, read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Try original Alpaca first, then Alpaca Paper Trading read-only market data for an unavailable or failed capability; preserve the existing provider order and evidence gates.
 
 
 # Market News Radar

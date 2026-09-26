@@ -6,7 +6,5 @@ interface:
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
-  products:
-  - CHAT
-  - CODEX
+  products: [CHAT, CODEX]
   allow_implicit_invocation: true

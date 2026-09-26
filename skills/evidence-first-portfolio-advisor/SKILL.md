@@ -3,7 +3,7 @@ name: evidence-first-portfolio-advisor
 description: Use in ChatGPT with the required Python runtime when analyzing listed equities, ETFs, or cryptoassets; resolving a security name to a Yahoo ticker; verifying prices, fundamentals, valuation, or news; constructing evidence-backed multi-asset portfolio candidates; or fulfilling an explicit backtest request.
 ---
 
-For every Alpaca-dependent step, first read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Prefer original Alpaca; use Alpaca Paper Trading read-only market data when the needed original capability is unavailable or fails, preserving all evidence gates.
+Before any Alpaca-dependent step, read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Try original Alpaca first, then Alpaca Paper Trading read-only market data for an unavailable or failed capability; preserve the existing provider order and evidence gates.
 
 
 # Evidence-First Portfolio Advisor

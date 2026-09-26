@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "gpt-8aca8305c2694af3f8836e8b43ec7cec",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
   "author": {
     "name": "devninjadev"
