@@ -3,6 +3,9 @@ name: market-news-radar
 description: Use when users ask about current financial news, trending market events, market breadth, ETF risk signals, volatility conditions, or why U.S. equities are moving now.
 ---
 
+For every Alpaca-dependent step, first read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Prefer original Alpaca; use Alpaca Paper Trading read-only market data when the needed original capability is unavailable or fails, preserving all evidence gates.
+
+
 # Market News Radar
 
 Answer in Korean. Lead with the verdict, distinguish evidence states, and limit causal language to the strength of the evidence.

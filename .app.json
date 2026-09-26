@@ -19,6 +19,10 @@
     "notion": {
       "id": "asdk_app_69c18c28f1188191bf5b8445c4ab0a2e",
       "required": true
+    },
+    "app-6a3cdf9e34b881918505f1cd5e06dbd8": {
+      "id": "asdk_app_6a3cdf9e34b881918505f1cd5e06dbd8",
+      "required": false
     }
   }
 }

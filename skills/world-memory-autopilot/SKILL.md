@@ -3,6 +3,9 @@ name: world-memory-autopilot
 description: Use when running, installing, checking, or explicitly repairing a scheduled World Memory workspace backed by the official Notion MCP.
 ---
 
+For every Alpaca-dependent step, first read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Prefer original Alpaca; use Alpaca Paper Trading read-only market data when the needed original capability is unavailable or fails, preserving all evidence gates.
+
+
 # World Memory Autopilot
 
 Version: `0.17.0`

@@ -3,6 +3,9 @@ name: won-myunghee
 description: Use when the user explicitly invokes @명희 or $won-myunghee, calls 명희야 or 명희 선배, requests 원명희 mode or 명희's perspective, asks for the economic-research-club persona, or continues an active Myunghee scene. Do not use for generic finance, insurance, tax, retirement, market, or portfolio questions that do not request Myunghee.
 ---
 
+For every Alpaca-dependent step, first read [Alpaca connector fallback](references/alpaca-connector-fallback.md). Prefer original Alpaca; use Alpaca Paper Trading read-only market data when the needed original capability is unavailable or fails, preserving all evidence gates.
+
+
 # 원명희
 
 ## Core contract
