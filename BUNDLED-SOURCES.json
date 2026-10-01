@@ -1,10 +1,19 @@
 {
-  "version": "2.0.2",
+  "version": "2.0.3",
   "world_memory": {
+    "version": "0.24.2",
     "repository": "https://github.com/devninjadev/WorldMemoryLite",
-    "commit": "d6c8d4dafc9785bd409828b6fcfd0c06431447c8",
-    "version": "0.17.1",
-    "changes": "agents/openai.yaml products normalized to CHAT/CODEX for hosted discovery; runtime and references unchanged"
+    "commit": "f57170568c5ed40c9c4d995e319ab5651d328bf3",
+    "release_asset_sha256": "c5197710a836fff5d63efe7bcdef86e9b9c7a6249672435c8066426baac692a9",
+    "distribution_file_count": 42,
+    "host_adaptation": {
+      "path": "agents/openai.yaml",
+      "policy.products": [
+        "CHAT",
+        "CODEX"
+      ],
+      "runtime_and_instruction_bytes_unchanged": true
+    }
   },
   "portfolio_advisor": {
     "repository": "https://github.com/devninjadev/PortfolioAnalysisSkillChatGPT",
@@ -12,22 +21,37 @@
     "changes": "ChatGPT capability gate in SKILL.md and default prompt; evidence contracts unchanged; agent products normalized to CHAT/CODEX; unsupported interface capability_notes removed"
   },
   "market_news_radar": {
-    "source": "user-selected installed skill",
-    "changes": "agents/openai.yaml products normalized to CHAT/CODEX"
+    "version": "0.1.4",
+    "repository": "https://github.com/devninjadev/market-news-radar",
+    "commit": "9a2c7061c85bd710002defcf28316e9a16c90542",
+    "release_asset_sha256": "25467ade74c086740f14aa1cad1c6bc2b442ce1b2b9702b9676bd1b75ab41079",
+    "distribution_file_count": 8,
+    "host_adaptation": {
+      "path": "agents/openai.yaml",
+      "policy.products": [
+        "CHAT",
+        "CODEX"
+      ],
+      "runtime_and_instruction_bytes_unchanged": true
+    }
   },
   "verification": {
-    "market_news_tests": 36,
-    "portfolio_tests": 175,
-    "world_memory_upstream_suite": {
-      "run_count": 286,
-      "failure_reports": 13,
-      "import_errors": 3,
-      "status": "not_all_passing",
-      "note": "Unmodified upstream 0.17.0 tests retain RSS and old VIX expectations, and import removed collection_pages. No claim of full suite success."
+    "status": "behavior_and_package_contracts_verified",
+    "persona_tests": 22,
+    "market_news_tests": 41,
+    "world_memory_development_tests": 335,
+    "python_files_parsed": 86,
+    "generic_local_validator": {
+      "status": "not_passing_existing_remote_metadata_fields",
+      "unsupported_fields": [
+        ".app.json apps.*.required",
+        "agents/openai.yaml policy.products"
+      ],
+      "note": "This local helper rejects preserved remote-plugin fields. The archive builder validates existing account manifest and app shapes; backend update/readback is verified separately."
     },
-    "myunghee_tests": 22,
-    "shared_skill_tests_note": "Shared skill results were obtained during Hayoung packaging; shared files are byte-identical.",
-    "world_memory_packaging_tests": 10
+    "live_notion_writes": false,
+    "live_market_connector_calls": false,
+    "live_schedule_run": false
   },
   "alpaca_paper_trading_fallback": {
     "app_id": "asdk_app_6a3cdf9e34b881918505f1cd5e06dbd8",
@@ -42,14 +66,117 @@
       "commit": "7a0b85e7879ee7a278527c6877e273a6b96470c3"
     },
     "market-news-radar": {
-      "version": "0.1.1",
+      "version": "0.1.4",
       "repository": "https://github.com/devninjadev/market-news-radar",
-      "commit": "59c7ed2690352bf6ba8844dcbf26e0a365837d8f"
+      "commit": "9a2c7061c85bd710002defcf28316e9a16c90542",
+      "release_asset_sha256": "25467ade74c086740f14aa1cad1c6bc2b442ce1b2b9702b9676bd1b75ab41079",
+      "distribution_file_count": 8,
+      "host_adaptation": {
+        "path": "agents/openai.yaml",
+        "policy.products": [
+          "CHAT",
+          "CODEX"
+        ],
+        "runtime_and_instruction_bytes_unchanged": true
+      },
+      "distribution_file_sha256": {
+        "VERSION": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7",
+        "SKILL.md": "cb94a7cd1c5a82a3835aca17bed6a35d26032eb11536f52a75da9d55a535ef61",
+        "references/source-contracts.md": "f9fc3e468326bdf6cdb32177fd0e9d0f80a2d84953c6edf9c9f62162f01880b3",
+        "references/alpaca-connector-fallback.md": "b39408e07969f25c7745387523d5d5c31ac9e5d8e789e41f8cc89f20256a4809",
+        "tests/test_collect_sources.py": "a42262e3f42cebaf56dfe7671aa986d1aa42edac80be1f9079074b1f134fc211",
+        "agents/openai.yaml": "3591259b82333b5894a8dba8ef4b88354ce8c389c2515d51b93b797aaa540c74",
+        "scripts/collect_sources.py": "e7a9a30d8c1865bffcfb15e89dade4088adff276771b50151a360c2eb2e801c9",
+        "assets/icon.svg": "83edb7ff1fcb54461e60f8bab4147bf6e24b4f9bb9e5d29283c614f40b811039"
+      }
     },
     "world-memory-autopilot": {
-      "version": "0.17.1",
+      "version": "0.24.2",
       "repository": "https://github.com/devninjadev/WorldMemoryLite",
-      "commit": "d6c8d4dafc9785bd409828b6fcfd0c06431447c8"
+      "commit": "f57170568c5ed40c9c4d995e319ab5651d328bf3",
+      "release_asset_sha256": "c5197710a836fff5d63efe7bcdef86e9b9c7a6249672435c8066426baac692a9",
+      "distribution_file_count": 42,
+      "host_adaptation": {
+        "path": "agents/openai.yaml",
+        "policy.products": [
+          "CHAT",
+          "CODEX"
+        ],
+        "runtime_and_instruction_bytes_unchanged": true
+      },
+      "distribution_file_sha256": {
+        "requirements.txt": "5f952889d5e3190cb1a8217a4a049995ad4df7a1f64f2a81c5d700b3c1ac1b17",
+        "VERSION": "35cb6510464522cca5b330a32ba46dc546df65bc221aa9032befdd8c391091ff",
+        "SKILL.md": "5dc66a0799f1355c06e255700f5eb99d6ddc3a954d6606ac719da43b56dda0b2",
+        "references/tradingview-prices.md": "6b3364ea81d2f4aeb043eb0b741b6cef87fb60f56da1964e39f7b710a150f87f",
+        "references/entity-extension.md": "5e6552f3850089b50b2247484447d36ed58b6ba4085f03af5d367841d99ec28f",
+        "references/market-data.md": "55ea8c73cd9c2ac1a6c868e7485027d0646c7d47b6b99074cecf2e63f4f22a70",
+        "references/deployment.md": "95dcf0dd7ffe7b52e18e3ee33e47b35003750eaf9a1d7d9b350240f959312818",
+        "references/collection-and-analysis.md": "c3b21dfa5ddb1fbaade7d378ffff7357614af945bdc24de0c105a7ad5f8e7a9e",
+        "references/publisher-web-search.md": "b252c6e6da3227740ea0e6fbf81ef3fa0ce7540a136e354ee1947e824b5ade03",
+        "references/manual-rss.md": "c2dc1e08d254623cc07f89be06acb8f08ec21af39e880cda5a8a1cff789c3482",
+        "references/alpaca-connector-fallback.md": "b39408e07969f25c7745387523d5d5c31ac9e5d8e789e41f8cc89f20256a4809",
+        "references/notion-layout.md": "37a42e8025e2c1a68cd2ddf546ab28e413848c32a7d3c77a5fa2ddf2efdc1fea",
+        "references/wolfram-fallback.md": "0d5c850093b12a3a439276d9db423e7565dc467e705b5f036453bcf2dc50dc9a",
+        "tests/test_required_entity_completion.py": "8830093af4278031d37c74a2f27cc0b9be801ce4fede65cca76cad38a2130282",
+        "tests/test_current_market_plan.py": "e5a4721a0cd66d6c7ec115fb1179a0a8de0ef99490884a0e28f97d7527ecf841",
+        "tests/test_scheduled_configuration.py": "090956fbabe47ae1bcd1bef0e54b939663308ffed16f522c46f727b2cae15762",
+        "tests/test_financialjuice_feed.py": "7add322118edd14d1b33f2fef2c67258ffc848eb76e10f4a1a97ef9fc4047c05",
+        "agents/openai.yaml": "0ce7c751a67a4f243471b21018ff7a67e19969b4e101cdab5989290106f2ff99",
+        "scripts/financialjuice_feed.py": "43c63764e3fdf5499da57a4bc5a1dad6902710ba7225dd17444aecd56d019670",
+        "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+        "scripts/world_memory/bootstrap.py": "4455b3188b945e4317dd508111d4f887370a64cbd94fc2a9f337af74a29ebd16",
+        "scripts/world_memory/report_format.py": "5a419ac7aa2a94f13ea03975943b4c19222804b8da3d55cbcb9b74e92e775af8",
+        "scripts/world_memory/discovery.py": "6aa91c33f6b29614c58e7b849ad6d132cceb12154ecbb3c35254b70d60772f8d",
+        "scripts/world_memory/registry.py": "576b1c213e9e79e64ed0d41c856d3e1e41247c4904f3a826388ba2dab9bc8a67",
+        "scripts/world_memory/market.py": "8511209a9ba00615f76a8033e11f93541d561c1a43cade46028a0031f531072c",
+        "scripts/world_memory/market_plan.py": "bff2dc685f812909a1875f848b1e81caedf243d03cff743e30eca783a05770d5",
+        "scripts/world_memory/notion_layout.py": "e3d1262c9a7dce2e44fe786f9678505030393741534134e401f94ab9a6b789eb",
+        "scripts/world_memory/notion_payloads.py": "35dca220b276b265b7ee9c0c0cf9fcf81dcc7d287d7ceddd76f82cee8346bd0a",
+        "scripts/world_memory/__init__.py": "af1cd3fc2a80bd51c46d355cca3faf70ca8d13ee4a09c7a8ea9e66eba4240ba5",
+        "scripts/world_memory/feed.py": "a0f7898a761f21ba2a0bb21be7ef0a081109ed595abff9529b7f92d7b834624d",
+        "scripts/world_memory/extensions.py": "fe5a55a5b340bece75bbd6ad1b6b781b13a0bcc059850cb6da4e8b9da0983281",
+        "scripts/world_memory/cli.py": "d4d3b181a6731e47621fd726c93c04502b924856a912ee53b80fefb2b2cfdceb",
+        "scripts/world_memory/entity_completion.py": "b6b576f28748545f251374578cb530fdfefaf36c519cb637f1e5c2ab3543b3d2",
+        "scripts/world_memory/feed_pages.py": "2606d073429483f8a15415eac37ba48b7e58d37a91ad81d825d24fba78b368b6",
+        "scripts/world_memory/windows.py": "7e15a83c738fc4c349cbdfefae8bd08ea1257c4713d0c0c628f849b48d0647d7",
+        "scripts/world_memory/workflow.py": "c294c75c5b2025518f40e021e6988fc591147c3df302609a394f27a542d2c754",
+        "scripts/world_memory/google_finance.py": "aca26f8a62136d2a9c0a229d1bed1c912d7fa2341aba3dcc1f092b1333455bea",
+        "scripts/world_memory/llm_plan.py": "ab65de39350d6072b83e3382094e222f51685f5acb3ca7c403334a261df1df0a",
+        "scripts/world_memory/__main__.py": "1eeda470174f5bdeba2a2d7c6788e1de7ecd38b81753e510d51aec110aa772d4",
+        "scripts/world_memory/tradingview_macro.py": "0b29737b805a918b280ce17c73945ce914760de646de310674f7ac94b85b576b",
+        "scripts/world_memory/plugin_market.py": "619dc01dc7fdb05a27c38f3ba3d59a8929340b341d6c8c0821f0def93a12d4b3",
+        "scripts/world_memory/views.py": "9ddfbd9ab50d3406938ff7b44c0da6bab11151d12649f294298c6152d4fe7f00"
+      }
     }
+  },
+  "previous_release_verification": {
+    "plugin_version": "2.0.2",
+    "results": {
+      "market_news_tests": 36,
+      "portfolio_tests": 175,
+      "world_memory_upstream_suite": {
+        "run_count": 286,
+        "failure_reports": 13,
+        "import_errors": 3,
+        "status": "not_all_passing",
+        "note": "Unmodified upstream 0.17.0 tests retain RSS and old VIX expectations, and import removed collection_pages. No claim of full suite success."
+      },
+      "myunghee_tests": 22,
+      "shared_skill_tests_note": "Shared skill results were obtained during Hayoung packaging; shared files are byte-identical.",
+      "world_memory_packaging_tests": 10
+    }
+  },
+  "account_overlay_compatibility": {
+    "reason": "Account updates overlay files and cannot delete old paths.",
+    "retired_world_memory_paths": [
+      "scripts/world_memory/news_contract.py",
+      "tests/test_release_contract.py",
+      "tests/test_scheduled_prompt_feed_contract.py",
+      "tests/test_skill_contract.py"
+    ],
+    "retired_path_behavior": "Docstring-only inert markers; no obsolete tests or runtime implementation.",
+    "development_tests": "Current v0.24.2 upstream development tests and fixture bundled alongside distribution files.",
+    "preservation": "Prior account persona, instructions archives, assets, portfolio advisor, app declarations and starting prompt preserved."
   }
 }

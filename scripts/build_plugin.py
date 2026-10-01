@@ -25,6 +25,19 @@ def main():
     apps = json.loads((ROOT / ".app.json").read_text())["apps"]
     assert len(apps) == 6 and all(x["id"] and isinstance(x["required"], bool) for x in apps.values())
     assert manifest["extensions"]["com.openai"]["apps"] == "./.app.json"
+    assert len(interface["shortDescription"]) <= 30
+    sources = json.loads((ROOT / "BUNDLED-SOURCES.json").read_text())
+    assert sources["version"] == manifest["version"]
+    for name in ("market-news-radar", "world-memory-autopilot"):
+        entry = sources["upstream_skill_releases"][name]
+        skill_root = ROOT / "skills" / name
+        assert (skill_root / "VERSION").read_text().strip() == entry["version"]
+        assert f"Version: {chr(96)}{entry['version']}{chr(96)}" in (skill_root / "SKILL.md").read_text()
+        for relative, expected in entry["distribution_file_sha256"].items():
+            if relative == "agents/openai.yaml":
+                assert "  products:\n  - CHAT\n  - CODEX\n" in (skill_root / relative).read_text()
+            else:
+                assert hashlib.sha256((skill_root / relative).read_bytes()).hexdigest() == expected, relative
     paths = [ROOT / ".app.json", ROOT / "BUNDLED-SOURCES.json", ROOT / "plugin.json", ROOT / ".codex-plugin/plugin.json", ROOT / "README.md", ROOT / "CHANGELOG.md", ROOT / "scripts/build_plugin.py"]
     for directory in ("assets", "skills"):
         for path in sorted((ROOT / directory).rglob("*")):

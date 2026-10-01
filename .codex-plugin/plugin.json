@@ -1,8 +1,4 @@
 {
-  "author": {
-    "name": "devninjadev"
-  },
-  "description": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
   "interface": {
     "capabilities": [
       "skills"
@@ -18,8 +14,13 @@
     "longDescription": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
     "shortDescription": "라이트노벨 스타일의 경제 투자 에듀테인먼트"
   },
+  "apps": "./.app.json",
   "name": "gpt-8aca8305c2694af3f8836e8b43ec7cec",
-  "skills": "./skills/",
-  "version": "2.0.2",
-  "apps": "./.app.json"
+  "version": "2.0.3",
+  "description": "라이트노벨 스타일의 경제 투자 에듀테인먼트",
+  "author": {
+    "name": "devninjadev"
+  },
+  "keywords": [],
+  "skills": "./skills"
 }
